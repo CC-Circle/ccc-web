@@ -1,13 +1,14 @@
 import './header.css';
+import ReadImage from './ReadImage';
 
-export default function ForHeader() {
-    const logo = `./img/logo.png`
-
+export default function Header({logo, alt}) {
+    const logo_path = "./image/logo.png";
     return (
         <>
             <header class="header">
                 <h1 class="header_logo">
-                    <img src={logo} alt="CCCロゴ" />
+                    <ReadImage src={logo_path} alt="CCCロゴ画像"/>
+
                 </h1>
 
                 <ul className="menu_nav">
