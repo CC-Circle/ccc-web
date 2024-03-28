@@ -37,14 +37,14 @@
     color: #000;
 
 }
-a{
+.header a{
     text-decoration: none;
     font-family: 'Museno-700';
     font-size: 15px;
     color: inherit;
 }
 
-.menu_navItem:hover {
+.header .menu_navItem:hover {
     text-decoration: underline;
     transform: translateY(-5px);
     transition: all .5s ease-in-out;

@@ -1,7 +1,7 @@
 import './header.css';
 import ReadImage from './ReadImage';
 
-export default function Header({logo, alt}) {
+export default function Header() {
     const logo_path = "./image/logo.png";
     return (
         <>
