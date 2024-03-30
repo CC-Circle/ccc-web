@@ -18,5 +18,12 @@
     font-family: Museno-900;
     src: url(../public/font/Museno-Sans-Cond/900.otf);
 }
-
+@font-face {
+    font-family: Noto-Sans-Bold;
+    src: url(../public/font/Noto-Sans-JP/NotoSansJP-Bold.ttf);
+}
+@font-face {
+    font-family: Noto-Sans-Regular;
+    src: url(../public/font/Noto-Sans-JP/NotoSansJP-Regular.ttf);
+}
 

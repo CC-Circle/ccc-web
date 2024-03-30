@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-export default function LogoImage({src, alt}){
+export default function LogoImage({src, alt, style}){
     const [path, setPath] = useState(src);
     
     const handleError = () => setPath('./image/no_image_logo.png');
     return (
-        <img src={path} alt={alt} onError={handleError}/>
+        <img src={path} alt={alt} onError={handleError} style={style}/>
     );
 }
