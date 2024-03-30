@@ -5,14 +5,17 @@ import reportWebVitals from './reportWebVitals';
 import Header from './Header';
 import Footer from './Footer';
 import Right from './Right';
+import MainVisual from './MainVisual';
 import './font.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header/>
-    <Footer/>
-    <Right/>
+    <Header />
+    <MainVisual />
+
+    <Footer />
+    <Right />
 
 
   </React.StrictMode>
