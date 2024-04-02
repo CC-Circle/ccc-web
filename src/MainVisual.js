@@ -16,36 +16,24 @@ export default function MainVisual() {
 
   const logo_path = "./image/sample.jpg";
   const title_path = "./image/DESIGN MY OWN GAME.svg";
-  const slider_image_style = {
-    width: '900px',
-    height: '100%',
-  };
-  const catch_image_style = {
-    height: '100%',
-  };
+
   return (
-    <>
-      <div className="main-visual">
-        <div className="slider-container">
-          <Slider {...settings}>
-              <ReadImage src={logo_path} alt="スライダー画像" style={slider_image_style} />
-              <ReadImage src={logo_path} alt="スライダー画像" style={slider_image_style} />
-              <ReadImage src={logo_path} alt="スライダー画像" style={slider_image_style} />
-              <ReadImage src={logo_path} alt="スライダー画像" style={slider_image_style} />
-              <ReadImage src={logo_path} alt="スライダー画像" style={slider_image_style} />
-              <ReadImage src={logo_path} alt="スライダー画像" style={slider_image_style} />
-          </Slider>
-          <div className="catch-copy">
-            <div className="title">
-              <ReadImage src={title_path} alt="キャッチコッピー" styel={catch_image_style} />
-            </div>
-            <div className="subtitle">
-              「自分のゲームをデザインする」<br />
-              愛知工業大学の開発サークル<br />
-            </div>
+    <div className="slider-container">
+        <Slider {...settings}>
+          <ReadImage src={logo_path} alt="スライダー画像" />
+          <ReadImage src={logo_path} alt="スライダー画像" />
+          <ReadImage src={logo_path} alt="スライダー画像" />
+          <ReadImage src={logo_path} alt="スライダー画像" />
+          <ReadImage src={logo_path} alt="スライダー画像" />
+          <ReadImage src={logo_path} alt="スライダー画像" />
+        </Slider>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <ReadImage className={"w-[360px]"} src={title_path} alt="キャッチコッピー" />
+          <div className="font-[Noto-Sans-Bold] text-[24px] text-[#fff] block mx-[0] my-[12px] text-center w-[360px]">
+            「自分のゲームをデザインする」<br />
+            愛知工業大学の開発サークル<br />
           </div>
         </div>
       </div>
-    </>
   );
 }
