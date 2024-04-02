@@ -1,4 +1,3 @@
-import './footer.css'
 import ReadImage from './ReadImage';
 
 
@@ -9,21 +8,19 @@ export default function Fotter() {
 
     return (
         <>
-            <footer className="footer">
-                <ul className="menu_nav">
-                    <li className="menu_navItem"><a href="./">HOME</a></li>
-                    <li className="menu_navItem"><a href="./">ACTIVITES</a></li>
-                    <li className="menu_navItem"><a href="./">NEWS</a></li>
-                    <li className="menu_navItem"><a href="./">JOIN</a></li>
-                    <li className="menu_navItem"><a href="./">CONTACT</a></li>
+            <footer className="w-full bg-[#999] h-[180px] mx-auto my-0;">
+                <ul className="float-left w-6/12 list-none ml-8 mr-0 my-0 p-0;">
+                    <li className="indent-[2px] text-[#fff] mx-0 my-3;"><a className="font-[Museno-500] no-underline text-xs text-inherit hover:text-black hover:transition-all hover:duration-[0.5s] hover:ease-[ease-in-out];" href="./">HOME</a></li>
+                    <li className="indent-[2px] text-[#fff] mx-0 my-3;"><a className="font-[Museno-500] no-underline text-xs text-inherit hover:text-black hover:transition-all hover:duration-[0.5s] hover:ease-[ease-in-out];" href="./">ACTIVITES</a></li>
+                    <li className="indent-[2px] text-[#fff] mx-0 my-3;"><a className="font-[Museno-500] no-underline text-xs text-inherit hover:text-black hover:transition-all hover:duration-[0.5s] hover:ease-[ease-in-out];" href="./">NEWS</a></li>
+                    <li className="indent-[2px] text-[#fff] mx-0 my-3;"><a className="font-[Museno-500] no-underline text-xs text-inherit hover:text-black hover:transition-all hover:duration-[0.5s] hover:ease-[ease-in-out];" href="./">JOIN</a></li>
+                    <li className="indent-[2px] text-[#fff] mx-0 my-3;"><a className="font-[Museno-500] no-underline text-xs text-inherit hover:text-black hover:transition-all hover:duration-[0.5s] hover:ease-[ease-in-out];" href="./">CONTACT</a></li>
                 </ul>
-                <div className="links">
-                    <h3 className="x_logo">
+                <div className="float-right ml-0 mr-8 my-2 p-0">
                         <a href={x_path}>
-                            <ReadImage src={logo_path} alt="Xのロゴ" />
+                            <ReadImage className="" src={logo_path} alt="Xのロゴ" />
                         </a>
-                    </h3>
-                    <div className="ait_link"><a href={ait_path}>AICHI INSTITUTE OF TECHNOLOGY</a></div>
+                    <div className="font-[Museno-500] indent-[2px] text-[#fff] mx-0 my-3 no-underline;"><a className="font-[Museno-500] no-underline text-xs text-inherit hover:text-black hover:transition-all hover:duration-[0.5s] hover:ease-[ease-in-out];"href={ait_path}>AICHI INSTITUTE OF TECHNOLOGY</a></div>
                 </div>
             </footer>
         </>
