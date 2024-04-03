@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./mainVisual.css";
+import "./Home_mainVisual.css";
 import ReadImage from './ReadImage';
 
 export default function MainVisual() {
