@@ -19,7 +19,7 @@ root.render(
 <Route path="/" element={<Home />} />
 <Route path="/activities" element={<Activities/>} />
 <Route path="/activities" element={<Activities/>} />
-<Route path="/news" element={<News/>} />
+{/* <Route path="/news" element={<News/>} /> */}
 <Route path="/join" element={<Join/>} />
 <Route path="/contact" element={<Contact/>} />
 {/* <Route path="/*" element={<NotFound/>} /> */}
