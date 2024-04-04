@@ -6,7 +6,7 @@ export default function Header() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const toggleMenu = () => {
-        setShowMenu(!showMenu);
+        setShowMenu(!showMenu); // showMenu ステートをトグルする
     };
 
     useEffect(() => {
@@ -37,8 +37,26 @@ export default function Header() {
             );
         } else {
             return (
-                <div className="" onClick={toggleMenu}>
+                <div className="flex justify-end pt-[15%]" onClick={toggleMenu}>
                     <ReadImage className="" src="./image/hamburger.svg" />
+                    {showMenu && (
+                     <div className="absolute top-[50%] right-[calc(50%-96px)] mt-8 w-48 bg-white rounded-lg shadow-md">
+                     <ul>
+                       <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer">
+                         <a href="./home">HOME</a>
+                       </li>
+                       <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer">
+                         <a href="./activities">ACTIVITIES</a>
+                       </li>
+                       <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer">
+                         <a href="./join">JOIN</a>
+                       </li>
+                       <li className="py-2 px-4 hover:bg-gray-100 cursor-pointer">
+                         <a href="./contact">CONTACT</a>
+                       </li>
+                     </ul>
+                   </div>
+                )}
                 </div>
             );
         }
@@ -46,9 +64,9 @@ export default function Header() {
 
     return (
         <>
-            <header className=" h-[150px] bg-white max-w-[1400px] mx-[2em] my-0;">
-                <h1 className="float-left mt-[60px] mb-0 mx-0;">
-                    <ReadImage className={"h-auto w-[200px] max-w-full;"} src={logo_path} alt="CCCロゴ画像" />
+            <header className=" h-[150px] bg-white max-w-[1400px] mx-[2em] my-0 relative z-50"> {/* relative を追加 */}
+                <h1 className="float-left mt-[60px] mb-0 mx-0">
+                    <ReadImage className="h-auto w-[200px] max-w-full" src={logo_path} alt="CCCロゴ画像" />
                 </h1>
 
                 <div>
