@@ -1,6 +1,6 @@
 import ReadImage from "./ReadImage";
 
-export default function News() {
+export default function HoemNews() {
     const image_path = "./image/sonnnamonohanai.jpg";
     return (
         <>

@@ -1,8 +1,8 @@
-export default function About() {
+export default function HomeAbout() {
     return (
         <div className="mx-[15%] flex items-center">
             <div className="text-center mx-[5%] w-1/5">
-                <div className="font-['Museno-900'] text-[32px]">ABOUT</div>
+                <div className="font-[Museno-900] text-[32px]">ABOUT</div>
                 <div className="font-['Noto-Sans-Regular'] text-[12px]">ContentsCreationCircleについて</div>
             </div>
             <p className="font-['Noto-Sans-Regular'] text-[12px] w-4/5">
