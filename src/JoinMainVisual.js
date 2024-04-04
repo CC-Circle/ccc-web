@@ -9,8 +9,8 @@ export default function JoinMainVisual() {
     return (
         <>
             <div className="flex items-center w-[100%] justify-end">
-                <div className="relative w-[1200px] lg:ml-[10%]"><ReadImage className="" src={image_path}/></div>
-                <div className="absolute left-0 ml-[5%] lg:ml-[12%]"><ReadImage src={text_path}/></div>
+                <div className="relative w-[1200px] md:ml-[10%]"><ReadImage className="" src={image_path}/></div>
+                <div className="absolute left-0 ml-[5%] md:ml-[12%]"><ReadImage src={text_path}/></div>
             </div>
         </>
     );

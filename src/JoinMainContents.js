@@ -4,16 +4,16 @@ export default function JoinMainContents() {
     const textGroup = (header, content) => {
         return (
             <div className="mb-10 p-2 bg-[#fff]">
-                <div className="font-[Noto-Sans-Bold] lg:text-[24px] text-[12px] mb-5">{header}</div>
-                <div className="font-[Noto-Snas-Regular] lg:text-[12px] text-[6px]">{content}</div>
+                <div className="font-[Noto-Sans-Bold] md:text-[24px] text-[12px] mb-5">{header}</div>
+                <div className="font-[Noto-Snas-Regular] md:text-[12px] text-[6px]">{content}</div>
             </div>
         );
     }
     const textList = (header, content) => {
         return (
             <div className="p-2">
-                <div className="font-[Noto-Sans-Bold] lg:text-[12px] text-[6px]">{header}</div>
-                <div className="font-[Noto-Snas-Regular] lg:text-[12px] text-[6px]">{content}</div>
+                <div className="font-[Noto-Sans-Bold] md:text-[12px] text-[6px]">{header}</div>
+                <div className="font-[Noto-Snas-Regular] md:text-[12px] text-[6px]">{content}</div>
             </div>
         );
     }
