@@ -1,7 +1,7 @@
 import ReadImage from "./ReadImage";
 
 export default function HomeActivities() {
-    const image_path = "./image/activities.png";
+    const image_path = "./image/6.jpg";
     return (
         <div className="flex flex-col items-center">
             <div className="relative">

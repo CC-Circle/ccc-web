@@ -2,7 +2,7 @@ import React from "react";
 import ReadImage from './ReadImage';
 
 export default function JoinMainVisual() {
-    const image_path = "./image/join.png";
+    const image_path = "./image/2.jpg";
     // const image_path = "./image/TOP.svg";
     const text_path = "./image/JOIN.svg";
 
