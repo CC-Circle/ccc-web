@@ -1,35 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter as Router,Routes,Route,} from "react-router-dom";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Header from './Header';
-import Footer from './Footer';
-import Right from './Right';
-import MainVisual from './MainVisual';
-import Hr from './Hr';
-import About from './About';
-import Activites from './Activites';
-import News from './News'
-import JoinContact from './JoinContact';
 import './font.css'
+import Home from './Home';
+import Activities from './Activities';
+import News from './News';
+import Join from './Join';
+import Contact from './Contact';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
-    <MainVisual />
-    <Hr />
-    <About />
-    <Hr />
-    <Activites/>
-    <Hr />
-    <News/>
-    <Hr />
-    <JoinContact/>
-
-
-    <Footer />
-    <Right />
+    <Router>
+<Routes>
+<Route path="/" element={<Home />} />
+<Route path="/activities" element={<Activities/>} />
+<Route path="/activities" element={<Activities/>} />
+{/* <Route path="/news" element={<News/>} /> */}
+<Route path="/join" element={<Join/>} />
+<Route path="/contact" element={<Contact/>} />
+{/* <Route path="/*" element={<NotFound/>} /> */}
+</Routes>
+</Router>
 
 
   </React.StrictMode>

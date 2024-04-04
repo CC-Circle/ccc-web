@@ -1,15 +1,15 @@
 import ReadImage from "./ReadImage";
 
-export default function Activites() {
-    const image_path = "./image/activites.png";
+export default function HomeActivities() {
+    const image_path = "./image/activities.png";
     return (
         <div className="flex flex-col items-center">
             <div className="relative">
-                <ReadImage className="" src={image_path} alt="activites" />
+                <ReadImage className="" src={image_path} alt="activities" />
                 <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center">
                     <div className="bg-[#fff] m-[10%] p-[5%]">
                         <div className="my-[20px]">
-                            <div className="font-[Museno-900] text-[32px]">ACTIVITES</div>
+                            <div className="font-[Museno-900] text-[32px]">ACTIVITIES</div>
                             <div className="font-[Noto-Sans-Regular] text-[12px] text-[#555]">ContentsCreationCircleの活動</div>
                         </div>
                         <div className="font-[Noto-Sans-Regular] text-[12px] text-black">

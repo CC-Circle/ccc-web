@@ -1,0 +1,17 @@
+import React from "react";
+import ReadImage from './ReadImage';
+
+export default function JoinMainVisual() {
+    const image_path = "./image/join.png";
+    // const image_path = "./image/TOP.svg";
+    const text_path = "./image/JOIN.svg";
+
+    return (
+        <>
+            <div className="flex items-center w-[100%] justify-end">
+                <div className="relative w-[1200px] lg:ml-[10%]"><ReadImage className="" src={image_path}/></div>
+                <div className="absolute left-0 ml-[5%] lg:ml-[12%]"><ReadImage src={text_path}/></div>
+            </div>
+        </>
+    );
+}
