@@ -2,27 +2,27 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Right from './Right';
-import Home_MainVisual from './Home_MainVisual';
+import HomeMainVisual from './HomeMainVisual';
 import Hr from './Hr';
-import Home_About from './Home_About';
-import Home_Activities from './Home_Activities';
-import Home_News from './Home_News'
-import Home_JoinContact from './Home_JoinContact';
+import HomeAbout from './HomeAbout';
+import HomeActivities from './HomeActivities';
+import HomeNews from './HomeNews'
+import HomeJoinContact from './HomeJoinContact';
 import './font.css'
 
 export default function Home() {
     return (
         <React.StrictMode>
             <Header />
-            <Home_MainVisual />
+            <HomeMainVisual />
             <Hr />
-            <Home_About />
+            <HomeAbout />
             <Hr />
-            <Home_Activities />
+            <HomeActivities />
             <Hr />
-            <Home_News />
+            <HomeNews />
             <Hr />
-            <Home_JoinContact />
+            <HomeJoinContact />
             <Footer />
             <Right />
         </React.StrictMode>
