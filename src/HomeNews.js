@@ -9,8 +9,8 @@ export default function HoemNews() {
 
             <div className="text-center">
                 <div className="my-[20px]">
-                    <div className="font-['Museno-900'] lg:text-[32px] text-[16px]">NEWS</div>
-                    <div className="font-['Noto-Sans-Regular'] lg:text-[12px] text-[6px]">ContentsCreationCircleからのおしらせ</div>
+                    <div className="font-['Museno-900'] md:text-[32px] text-[16px]">NEWS</div>
+                    <div className="font-['Noto-Sans-Regular'] md:text-[12px] text-[6px]">ContentsCreationCircleからのおしらせ</div>
                 </div>
 
                 <div class="twitter-area">
