@@ -9,6 +9,7 @@ import Activities from './Activities';
 import News from './News';
 import Join from './Join';
 import Contact from './Contact';
+import NotFound from './NotFound';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,11 +19,10 @@ root.render(
 <Routes>
 <Route path="/" element={<Home />} />
 <Route path="/activities" element={<Activities/>} />
-<Route path="/activities" element={<Activities/>} />
 {/* <Route path="/news" element={<News/>} /> */}
 <Route path="/join" element={<Join/>} />
 <Route path="/contact" element={<Contact/>} />
-{/* <Route path="/*" element={<NotFound/>} /> */}
+<Route path="/*" element={<NotFound/>} />
 </Routes>
 </Router>
 
