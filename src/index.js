@@ -1,15 +1,22 @@
+// framework
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {BrowserRouter as Router,Routes,Route,} from "react-router-dom";
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import './font.css'
-import Home from './Home';
-import Activities from './Activities';
-import News from './News';
-import Join from './Join';
-import Contact from './Contact';
-import NotFound from './NotFound';
+
+// utils
+import reportWebVitals from './utils/reportWebVitals';
+
+// style
+import './style/index.css';
+import './style/font.css'
+
+// components
+import Home from './components/Home'
+import Activities from './components/Activities';
+import News from './components/News';
+import Join from './components/Join';
+import Contact from './components/Contact';
+import NotFound from './components/NotFound';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

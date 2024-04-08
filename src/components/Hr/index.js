@@ -1,4 +1,4 @@
-import ReadImage from './ReadImage';
+import ReadImage from '../ReadImage';
 
 export default function Hr() {
     const image_path = "./image/logo2.png";

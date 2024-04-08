@@ -1,9 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
+
+// style
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./home_main_visual.css";
-import ReadImage from './ReadImage';
+
+import "../../style/home_main_visual.css";
+import ReadImage from '../ReadImage';
 
 export default function HomeMainVisual() {
   var settings = {

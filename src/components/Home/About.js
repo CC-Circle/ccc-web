@@ -1,4 +1,5 @@
-import FadeInBottom from './FadeInBottom';
+// components
+import FadeInBottom from '../FadeInBottom';
 
 export default function HomeAbout() {
     return (

@@ -1,5 +1,6 @@
-import ReadImage from "./ReadImage";
-import FadeInBottom from './FadeInBottom';
+// components
+import ReadImage from "../ReadImage";
+import FadeInBottom from '../FadeInBottom';
 
 
 export default function HomeActivities() {

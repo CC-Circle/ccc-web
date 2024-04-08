@@ -1,3 +1,5 @@
+// https://zenn.dev/cureapp/articles/63c399916396b6
+
 import React from "react";
 import { useInView } from "react-intersection-observer";
 

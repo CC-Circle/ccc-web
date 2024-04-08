@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import ReadImage from './ReadImage';
-import './headerAnim.css';
+
+// style
+import '../../style/headerAnim.css';
+
+// components
+import ReadImage from '../ReadImage';
 
 export default function Header() {
     const [showMenu, setShowMenu] = useState(false); // ハンバーガーメニューの表示状態

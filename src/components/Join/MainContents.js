@@ -1,6 +1,7 @@
 import React from "react";
-import FadeInBottom from "./FadeInBottom";
 
+// components
+import FadeInBottom from "../FadeInBottom";
 
 export default function JoinMainContents() {
     const textGroup = (header, content) => {

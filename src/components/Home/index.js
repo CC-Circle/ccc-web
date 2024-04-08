@@ -1,14 +1,16 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Right from './Right';
-import HomeMainVisual from './HomeMainVisual';
-import Hr from './Hr';
-import HomeAbout from './HomeAbout';
-import HomeActivities from './HomeActivities';
-import HomeNews from './HomeNews'
-import HomeJoinContact from './HomeJoinContact';
-import './font.css'
+
+// components
+import Header from '../Header';
+import Footer from '../Footer';
+import Right from '../Right';
+import Hr from '../Hr';
+
+import HomeMainVisual from './MainVisual';
+import HomeAbout from './About';
+import HomeActivities from './Activities';
+import HomeNews from './News'
+import HomeJoinContact from './JoinContactLink';
 
 export default function Home() {
     return (

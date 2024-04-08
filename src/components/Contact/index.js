@@ -1,9 +1,13 @@
 import React from 'react';
-import './font.css'
-import Header from "./Header";
-import Fotter from "./Footer";
-import Right from "./Right";
-import ReadImage from './ReadImage';
+
+// style
+import '../../style/font.css'
+
+// components
+import Header from "../Header";
+import Fotter from "../Footer";
+import Right from "../Right";
+import ReadImage from '../ReadImage';
 
 export default function Activities() {
     return (
