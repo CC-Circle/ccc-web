@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReadImage from './ReadImage';
+import './headerAnim.css';
 
 export default function Header() {
     const [showMenu, setShowMenu] = useState(false); // ハンバーガーメニューの表示状態
@@ -38,28 +39,21 @@ export default function Header() {
             );
         } else {
             return (
-                <div className="flex justify-end pt-[15%] h-full" onClick={toggleMenu}>
-                    <ReadImage className="" src="./image/hamburger.svg" />
-                    {showMenu && (
-                        <div className="absolute top-[100%] h-full w-full ">
-                            <ul className='bg-white opacity-90 rounded-lg shadow-md'>
-                                <li className="py-4 px-8 hover:bg-gray-100 cursor-pointer">
-                                    <a href="/">HOME</a>
-                                </li>
-                                <li className="py-4 px-8 hover:bg-gray-100 cursor-pointer">
-                                    <a href="./*">ACTIVITIES</a>
-                                </li>
-                                <li className="py-4 px-8 hover:bg-gray-100 cursor-pointer">
-                                    <a href="./join">JOIN</a>
-                                </li>
-                                <li className="py-4 px-8 hover:bg-gray-100 cursor-pointer">
-                                    <a href="./contact">CONTACT</a>
-                                </li>
-                            </ul>
-                        </div>
-                    )}
+                <div className="flex items-center">
+                    <div className={`openbtn ${showMenu ? 'active' : ''}`} onClick={toggleMenu}>
+                        <span></span><span></span><span></span>
+                    </div>
+                    <nav className={`fixed z-50 top-0 right-0 w-full h-screen bg-[#999] z-999 transition-transform ${showMenu ? 'translate-x-0' : 'translate-x-full'}`}>
+                        <ul className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            <li className='text-center'><a href="/" className="text-gray-700 no-underline py-2 px-4 block uppercase tracking-wide font-bold">HOME</a></li>
+                            <li className='text-center'><a href="./*" className="text-gray-700 no-underline py-2 px-4 block uppercase tracking-wide font-bold">ACTIVITIES</a></li>
+                            <li className='text-center'><a href="./join" className="text-gray-700 no-underline py-2 px-4 block uppercase tracking-wide font-bold">JOIN</a></li>
+                            <li className='text-center'><a href="./contact" className="text-gray-700 no-underline py-2 px-4 block uppercase tracking-wide font-bold">CONTACT</a></li>
+                        </ul>
+                    </nav>
                 </div>
             );
+            
         }
     };
 
