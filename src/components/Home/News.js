@@ -1,5 +1,5 @@
-import ReadImage from "./ReadImage";
-import './loader.css'
+import ReadImage from "../ReadImage";
+import '../../style/loader.css'
 
 export default function HoemNews() {
     const image_path = "./image/sonnnamonohanai.jpg";
