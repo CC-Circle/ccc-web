@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import ReadImage from './ReadImage';
+
+// components
+import ReadImage from '../ReadImage';
 
 
 export default function Fotter() {

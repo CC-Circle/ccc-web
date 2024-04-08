@@ -1,5 +1,8 @@
 import React from "react";
 
+// components
+import FadeInBottom from "../FadeInBottom";
+
 export default function JoinMainContents() {
     const textGroup = (header, content) => {
         return (
@@ -53,15 +56,19 @@ export default function JoinMainContents() {
         <>
             <div className="p-10 bg-[#eee]">
                 {header.map((header, index) => (
+                    <FadeInBottom>
                     <div key={index}>
                         {textGroup(header, sentence[index])}
                     </div>
+                    </FadeInBottom>
                 ))}
                 <div className="bg-[#fff]">
                 {listHeader.map((header, index) => (
+                    <FadeInBottom>
                     <div key={index}>
                         {textList(header, listContent[index])}
                     </div>
+                    </FadeInBottom>
                 ))}
                 </div>
             </div>
