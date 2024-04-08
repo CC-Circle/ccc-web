@@ -37,7 +37,7 @@ export default function HomeMainVisual() {
       </Slider>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <ReadImage className={"md:w-[360px] w-[140px] md:ml-0 ml-[calc(50%-70px)]"} src={title_path} alt="キャッチコッピー" />
-        <div className="font-[Noto-Sans-Bold] text-[12px] md:text-[24px] text-[#fff] block mx-[0] my-[12px] text-center w-[360px]">
+        <div className="font-[Noto-Sans-Bold] text-[12px] md:text-[24px] text-[#ddd] block mx-[0] my-[12px] text-center w-[360px]">
           「自分のゲームをデザインする」<br />
           愛知工業大学の開発サークル<br />
         </div>
