@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 export default function FadeInBottom({ children }) {
     const { ref, inView } = useInView({
       // ref要素が現れてから50px過ぎたら
-      rootMargin: "-50px",
+      rootMargin: "-100px",
       // 最初の一度だけ実行
       triggerOnce: true,
     });
