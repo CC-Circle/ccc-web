@@ -1,0 +1,16 @@
+.slick-list,
+.slider_container {
+    overflow-x: hidden;
+    /* こいつ消すとデザイン壊れます */
+    /* react-slickの仕様で使わざるを得ない？ */
+}
+.slick-list {
+    padding: 0%
+    /* 初期設定値の変更 */
+}
+.slider_container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

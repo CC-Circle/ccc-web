@@ -1,47 +1,40 @@
-# Getting Started with Create React App
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-このプロジェクトは[Create React App](https://github.com/facebook/create-react-app)を利用しています
-（Create React Appは現在非推奨のため将来的にはNext.js等に移行予定）
+## Getting Started
 
-# デザイン
-以下のページから確認できる
-[Draft / ccc-web](https://www.figma.com/file/akuKR80oRQdH8MYJI8XAlW/ccc-web?type=design&node-id=0%3A1&mode=design&t=ENlFV4hUFqPKBBfx-1)
-# 開発にあたって
-以下のガイドライン・テンプレートに沿って開発を行う
-- [コミットメッセージ](https://github.com/Niimijpn/github/blob/main/commit-message-guidelines.md)
-- [プルリクエスト](https://github.com/Niimijpn/github/blob/main/pull-request-guidelines.md)
-# Netlifyへのデプロイ
+First, run the development server:
 
-## Netlify CLI (コマンドラインインターフェース) のインストール
-- デプロイには Netlify CLI が必要です。npm を使ってグローバルにインストール
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
-npm install -g netlify-cli
-```
-## Netlify へのログイン:
-- まだログインしていない場合は、Netlify CLI を使ってログイン
-```
-netlify login
-```
-これにより、Netlify CLI を承認するためのブラウザウィンドウが開きます。承認後、ブラウザウィンドウを閉じてください。
 
-## React アプリのビルド
-- デプロイ前に、React アプリをビルドする必要があります。以下のコマンドを実行
-```
-npm run build
-```
-これにより、build ディレクトリに最適化された本番用のビルドが作成されます。
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Netlify へのデプロイ
-- これで、サイトを Netlify にデプロイできます。次のコマンドを実行します
-```
-netlify deploy --dir=build
-```
-このコマンドでは、サイト名を選択するように促されます。デフォルトの選択肢を選択するか、カスタム名を選択できます。また、ビルドディレクトリを指定する必要がありますが、今回は build ディレクトリを指定します。
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## プロンプトに従う
-- netlify deploy コマンドを実行した後は、ターミナルのプロンプトに従ってください。Netlify へのアクセスを許可し、チームを選択します（複数のチームがある場合）。
-- 環境変数の設定 (オプション): アプリに必要な環境変数がある場合は、Netlify ダッシュボードの「サイト設定」 > 「ビルド＆デプロイ」 > 「環境」で設定できます。
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-## デプロイの完了
-- デプロイが完了すると、Netlify から提供された URL でサイトにアクセスできます。
-継続的なデプロイ (オプション): Netlify は継続的なデプロイをサポートしています。つまり、リポジトリに変更をプッシュするたびに、Netlify が自動的に更新をデプロイします。これは Netlify ダッシュボードの「サイト設定」 > 「ビルド＆デプロイ」 > 「継続的なデプロイ」で設定できます。
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
