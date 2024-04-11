@@ -77,7 +77,7 @@ export default function Header() {
         <>
             <header className=" h-[150px] bg-white max-w-[1400px] mx-[2em] my-0 relative z-50"> {/* relative を追加 */}
                 <h1 className="float-left mt-[60px] mb-0 mx-0">
-                    <ReadImage className="h-auto w-[200px] max-w-full" src={logo_path} alt="CCCロゴ画像" />
+                    <ReadImage className="h-auto w-[200px] max-w-full" src={logo_path} alt="愛知工業大学コンテンツクリエーションサークル" />
                 </h1>
 
                 <div>
